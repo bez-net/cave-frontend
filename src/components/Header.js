@@ -17,7 +17,7 @@ const Header = () => {
                     <NavHashLink to="/#testimonies" smooth className="nav-link"><li>Testimonies</li></NavHashLink>
                     <NavHashLink to="/#main-footer" smooth className="nav-link"><li>Contact Us</li></NavHashLink>
                     <Link to="/register"  className="nav-link"><li>Register</li></Link>
-                    <Link to="/login"  className="nav-link"><li>Login</li></Link>
+                    {/* <Link to="/login"  className="nav-link"><li>Login</li></Link> */}
                 </ul>
             </nav>
         </header>

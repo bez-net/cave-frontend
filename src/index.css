@@ -79,7 +79,7 @@ h3 {
 .main-header {
   height: 3.75rem;
   width: 100%;
-  background: var(--gray-colour);
+  background: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -75,13 +75,13 @@ const MobileMenu = () => {
           >
             <li>Register</li>
           </Link>
-          <Link
+          {/* <Link
             to="/login"
             onClick={hideOverlayMobileMenu}
             className="nav-link"
           >
             <li>Login</li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     </div>

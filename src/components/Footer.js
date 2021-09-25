@@ -73,9 +73,9 @@ const Footer = () => {
               <Link to="/register" className="nav-link">
                 <li>Register</li>
               </Link>
-              <Link to="/login" className="nav-link">
+              {/* <Link to="/login" className="nav-link">
                 <li>Login</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>

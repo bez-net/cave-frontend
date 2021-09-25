@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 // import Register from './components/Register/Register';
-import Login from './components/Register/Login';
+// import Login from './components/Register/Login';
 import { Registration } from './components/Register/Registration';
 import About from './components/About/About';
 import ScrollToTop from './components/ScrollToTop';
@@ -39,9 +39,9 @@ function App() {
             <Registration />
           </Route>
             
-          <Route path="/login">
+          {/* <Route path="/login">
             <Login />
-          </Route>
+          </Route> */}
 
         </Switch>
       </main>
