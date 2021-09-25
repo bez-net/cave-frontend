@@ -1,138 +1,217 @@
-import { Link } from "react-router-dom";
+import logo from "../../images/adullam-logo.png";
+import { React, useState } from 'react';
+import ScrollToTop from "../ScrollToTop";
 
-const PersonalDetails = () => {
-  
+
+const PersonalDetails = ({ formData, setForm, navigation }) => {
+
+  const { firstname, lastname, middlename, dob, gender, address, city, state, country, zip, phoneno, email, nationality, profession } = formData;
+
+  let [formOkay, setFormOkay] = useState(false);
+
+  const validate = (e) => {
+
+    if(firstname && lastname && middlename && dob && gender && address && city && state && country && zip && phoneno && email && nationality && profession) {
+
+      e.preventDefault();
+      setFormOkay(true);
+
+    }
+    
+  }
+
   return (
-    <div className="register__content">
-      <div className="note reg__label">Personal Details</div>
-      <div className="form__control">
-        <label>First Name</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="First Name"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Last Name</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="Last Name"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Middle Name</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="Middle Name"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Date-of-Birth</label>
-        <input
-          type="date"
-          className="form__control--input"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Gender</label>
-        <select className="form__control--input" required>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-      </div>
-      <div className="form__control">
-        <label>Contact Address</label>
-        <textarea className="form__control--input" required></textarea>
-      </div>
-      <div className="form__control">
-        <label>City</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="City"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>State/Province</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="State/Province"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Country</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="Country"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Postal Code/Zip</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="Postal Code/Zip"
-        />
-      </div>
-      <div className="form__control">
-        <label>Phone No.</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="Phone No. (WhatsApp)"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Email</label>
-        <input
-          type="email"
-          className="form__control--input"
-          placeholder="Email"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Nationality</label>
-        <input
-          type="text"
-          className="form__control--input"
-          placeholder="Nationality"
-          required
-        />
-      </div>
-      <div className="form__control">
-        <label>Professional Training</label>
-        <input
-          type="email"
-          className="form__control--input"
-          placeholder="Professional Training"
-          required
-        />
-      </div>
-      <div className="next__prev--box">
-        <Link to="" className="formNavigator back">
-          &larr; Back
-        </Link>
-        <Link to="/register/financial" className="formNavigator forward">
-          Next &rarr;
-        </Link>
-      </div>
 
+    <div className="register">
+      <ScrollToTop />
+      <div className="register__header">
+        <img src={logo} className="reg__logo" alt="adullam logo" />
+        <h2 className="register__heading">Registration Form</h2>
+        <p>Diploma in Theology and Ministry Application.</p>
+      <p>Fields with <span className="required"> * </span> are REQUIRED!</p>
       </div>
+      <form className="register__form">
+        <div className="register__content">
+          <div className="note reg__label">Personal Details</div>
+          <div className="form__control">
+            <label>First Name<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="First Name"
+              name="firstname"
+              value={ firstname }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          
+          <div className="form__control">
+            <label>Last Name<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Last Name"
+              name="lastname"
+              value={ lastname }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Middle Name<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Middle Name"
+              name="middlename"
+              value={ middlename }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Date-of-Birth<span className="required">*</span></label>
+            <input
+              type="date"
+              className="form__control--input"
+              name="dob"
+              value={ dob }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Gender<span className="required">*</span></label>
+            <select className="form__control--input" name="gender" value={ gender }
+              onChange={ setForm } required>
+                <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female" selected>Female</option>
+            </select>
+          </div>
+          <div className="form__control">
+            <label>Contact Address <span className="required">*</span></label>
+            <textarea
+              className="form__control--input"
+              name="address"
+              value={ address }
+              onChange={ setForm }
+              required
+            ></textarea>
+          </div>
+          <div className="form__control">
+            <label>City<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="City"
+              name="city"
+              value={ city }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>State/Province<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="State/Province"
+              name="state"
+              value={ state }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Country<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Country"
+              name="country"
+              value={ country }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Postal Code/Zip<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Postal Code/Zip"
+              name="zip"
+              value={ zip }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Phone No.<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Phone No. (WhatsApp)"
+              name="phoneno"
+              value={ phoneno }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Email<span className="required">*</span></label>
+            <input
+              type="email"
+              className="form__control--input"
+              placeholder="Email"
+              name="email"
+              value={ email }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Nationality<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Nationality"
+              name="nationality"
+              value={ nationality }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          <div className="form__control">
+            <label>Professional Training<span className="required">*</span></label>
+            <input
+              type="text"
+              className="form__control--input"
+              placeholder="Professional Training"
+              name="profession"
+              value={ profession }
+              onChange={ setForm }
+              required
+            />
+          </div>
+          
+          <div className="next__prev--box">
+            
+            { formOkay ? 
+            
+              <button onClick={ () => navigation.next() } className="formNavigator forward">Next &rarr;</button> : 
+              
+              <button className="formNavigator forward" onClick={ validate } >Next &nbsp;</button> 
+            }
+            
+          </div>
+        </div>
+      </form>
+    </div>
   );
+  
 };
 
 export default PersonalDetails;

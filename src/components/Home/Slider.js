@@ -12,7 +12,7 @@ const Slider = () => {
         <div className="myslider fade">
             <div className="txt">
                 <h1>ADULLAM - RCN Bible Seminary</h1>
-                <p>Apply for Febuary Session</p>
+                <p>Apply for Febuary 2022 Session</p>
                 <Link to="/register" className="apply-btn">Apply Now</Link>
             </div>
             <img src={sliderImg} alt="slider display gallery" className="slider-img" />
@@ -40,14 +40,14 @@ const Slider = () => {
         {/* <!-- end of slider --> */}
 
         {/* <!-- prev and next --> */}
-            <a className="prev">&#10094;</a>
+            {/* <a className="prev">&#10094;</a>
             <a className="next">&#10095;</a>
-            {/* <!-- dots controls --> */}
+           
             <div className="dotsbox">
                 <span className="dot"></span>
                 <span className="dot"></span>
                 <span className="dot"></span>
-            </div>
+            </div> */}
         
     </div>
 

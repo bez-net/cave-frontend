@@ -1,43 +1,91 @@
-import logo from '../images/adullam-logo.png';
+import logo from "../images/adullam-logo.png";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const MobileMenu = () => {
+  const [open, setOpen] = useState({
+    display: "none",
+  });
 
-    const mobileMenuClick = () => {
-        console.log('clicked');
-    }
+  const mobileMenuClick = () => {
+    setOpen({
+      display: "block",
+    });
+  };
 
-    const overlayClick = () => {
-        console.log('clicked');
-    }
+  const hideOverlayMobileMenu = () => {
+    setOpen({
+      display: "none",
+    });
+  };
 
-    return (
-        
-      <div>
-          
-        <div className="overlay" onClick={ overlayClick }></div>
+  return (
+    <div>
+      <div
+        className="overlay"
+        onClick={hideOverlayMobileMenu}
+        style={open}
+      ></div>
 
-        <button className="mobile-menu" onClick={ mobileMenuClick } >
-            <span className="menu-bar"></span>
-            <span className="menu-bar"></span>
-            <span className="menu-bar"></span>
-        </button>
+      <button className="mobile-menu" onClick={mobileMenuClick}>
+        <span className="menu-bar"></span>
+        <span className="menu-bar"></span>
+        <span className="menu-bar"></span>
+      </button>
 
-        
-        <nav className="mobile-nav">
-            <div className="footer-logo">
-                <a href="index.html"><img src={logo} alt="adullam-logo" className="logo" /></a>
-            </div>
-            <ul className="mobile-links">
-                <a href="index.html"  className="nav-link"><li>Home</li></a>
-                <a href="#about"  className="nav-link"><li>About</li></a>
-                <a href="#testimonies"  className="nav-link"><li>Testimonies</li></a>
-                <a href="#main-footer"  className="nav-link"><li>Contact Us</li></a>
-                <a href="index.html"  className="nav-link"><li>Register/Login</li></a>
-            </ul>
-        </nav>
+      <nav className="mobile-nav" style={open}>
+        <div className="footer-logo">
+          <Link to="/" onClick={hideOverlayMobileMenu}>
+            <img src={logo} alt="adullam-logo" className="logo" />
+          </Link>
+        </div>
+        <ul className="mobile-links">
+          <Link to="/" onClick={hideOverlayMobileMenu} className="nav-link">
+            <li>Home</li>
+          </Link>
+          <NavHashLink
+            to="/#about"
+            onClick={hideOverlayMobileMenu}
+            smooth
+            className="nav-link"
+          >
+            <li>About</li>
+          </NavHashLink>
+          <NavHashLink
+            to="/#testimonies"
+            onClick={hideOverlayMobileMenu}
+            smooth
+            className="nav-link"
+          >
+            <li>Testimonies</li>
+          </NavHashLink>
+          <NavHashLink
+            to="/#main-footer"
+            onClick={hideOverlayMobileMenu}
+            smooth
+            className="nav-link"
+          >
+            <li>Contact Us</li>
+          </NavHashLink>
+          <Link
+            to="/register"
+            onClick={hideOverlayMobileMenu}
+            className="nav-link"
+          >
+            <li>Register</li>
+          </Link>
+          <Link
+            to="/login"
+            onClick={hideOverlayMobileMenu}
+            className="nav-link"
+          >
+            <li>Login</li>
+          </Link>
+        </ul>
+      </nav>
+    </div>
+  );
+};
 
-      </div>
-    );
-}
- 
 export default MobileMenu;

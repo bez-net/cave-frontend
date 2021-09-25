@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
     return ( 
 
@@ -23,7 +25,7 @@ const About = () => {
                     <li><p>Online Option</p></li>
                 </ul>
                 {/* <!-- read more button --> */}
-                <a href="about.html" className="readmore-btn">Read More</a>
+                <Link to="/about" className="readmore-btn">Read More</Link>
             </div>
 
             {/* <!-- YOUTUBE VIDEO --> */}

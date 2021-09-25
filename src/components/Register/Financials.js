@@ -1,7 +1,19 @@
-import { Link } from "react-router-dom";
+import logo from "../../images/adullam-logo.png";
+import { React } from 'react';
+import ScrollToTop from "../ScrollToTop";
 
-const Financials = () => {
+
+const Financials = ({ fromData, setForm, navigation }) => {
   return (
+
+    <div className="register">
+      <ScrollToTop />
+      <div className="register__header">
+        <img src={logo} className="reg__logo" alt="adullam logo" />
+        <h2 className="register__heading">Registration Form</h2>
+        <p>Diploma in Theology and Ministry Application.</p>
+      </div>
+      <form className="register__form">
     <div className="register__content">
       <div className="note reg__label">
         Febuary 2022 Application Information
@@ -90,14 +102,19 @@ const Financials = () => {
       </span>
 
       <div className="next__prev--box">
-        <Link to="/register" className="formNavigator back">
+
+        <button onClick={ () => navigation.previous() } className="formNavigator forward">
           &larr; Back
-        </Link>
-        <Link to="/register/relationship" className="formNavigator forward">
-          Next &rarr;
-        </Link>
+        </button>
+        <button onClick={ () => navigation.next() } className="formNavigator forward">
+            Next &rarr;
+        </button>
+
       </div>
     </div>
+  </form>
+  </div>
+
   );
 };
 
