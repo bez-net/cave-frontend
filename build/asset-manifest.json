@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f326743.chunk.css",
+    "main.js": "/static/js/main.1e7a6f58.chunk.js",
+    "main.js.map": "/static/js/main.1e7a6f58.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cdcdd192.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cdcdd192.js.map",
+    "static/js/2.b827be73.chunk.js": "/static/js/2.b827be73.chunk.js",
+    "static/js/2.b827be73.chunk.js.map": "/static/js/2.b827be73.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6f326743.chunk.css.map": "/static/css/main.6f326743.chunk.css.map",
+    "static/js/2.b827be73.chunk.js.LICENSE.txt": "/static/js/2.b827be73.chunk.js.LICENSE.txt",
+    "static/media/Adullam-chairman.6191033d.jpg": "/static/media/Adullam-chairman.6191033d.jpg",
+    "static/media/Adullam-provost.38476d21.jpg": "/static/media/Adullam-provost.38476d21.jpg",
+    "static/media/Rev_Godsent.a3107f76.jpg": "/static/media/Rev_Godsent.a3107f76.jpg",
+    "static/media/Rev_Tony.de29bca9.jpg": "/static/media/Rev_Tony.de29bca9.jpg",
+    "static/media/adullam-logo.1d2e5164.png": "/static/media/adullam-logo.1d2e5164.png",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/onCampus.801170df.jpeg": "/static/media/onCampus.801170df.jpeg",
+    "static/media/online-course.e54cad7f.jpg": "/static/media/online-course.e54cad7f.jpg",
+    "static/media/provost.6bc8ff8e.jpg": "/static/media/provost.6bc8ff8e.jpg",
+    "static/media/About.css": "/static/media/slider-image.aaf8a438.jpg",
+    "static/media/testimony.c27d9545.jpg": "/static/media/testimony.c27d9545.jpg",
+    "static/media/testimony2.0add9a6f.jpeg": "/static/media/testimony2.0add9a6f.jpeg",
+    "static/media/testimony3.c509717c.jpeg": "/static/media/testimony3.c509717c.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdcdd192.js",
+    "static/js/2.b827be73.chunk.js",
+    "static/css/main.6f326743.chunk.css",
+    "static/js/main.1e7a6f58.chunk.js"
+  ]
+}

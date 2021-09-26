@@ -3,13 +3,18 @@ import { NavHashLink } from "react-router-hash-link";
 import logo from "../images/adullam-logo.png";
 
 const Footer = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+  
   return (
     // <!-- FOOTER -->
     <footer id="main-footer">
       <div className="container footer-container">
         <div className="footer-items">
           <div>
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={ handleSubmit }>
               <input
                 type="text"
                 name="fullname"

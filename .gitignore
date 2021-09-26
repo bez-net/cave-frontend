@@ -9,7 +9,11 @@
 /coverage
 
 # production
-/build
+/public
+/src
+package.json
+package-lock.json
+userObj.txt
 
 # misc
 .DS_Store
@@ -21,3 +25,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
