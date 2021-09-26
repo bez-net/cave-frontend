@@ -17,7 +17,7 @@ const Header = () => {
                     <NavHashLink to="/#testimonies" smooth className="nav-link"><li>Testimonies</li></NavHashLink>
                     <NavHashLink to="/#main-footer" smooth className="nav-link"><li>Contact Us</li></NavHashLink>
                     <Link to="/register"  className="nav-link"><li>Register</li></Link>
-                    <a href="https://seminary.adullam.ng"  className="nav-link"><li>Login</li></a> 
+                    <a href="https://seminary.adullam.ng/main/login_form.php"  className="nav-link"><li>Login</li></a>  
                 </ul>
             </nav>
         </header>
