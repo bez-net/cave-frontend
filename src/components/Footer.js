@@ -1,15 +1,24 @@
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import logo from "../images/adullam-logo.png";
+import {useHistory} from 'react-router-dom'
+import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
+
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push('/');
+  }
   return (
     // <!-- FOOTER -->
     <footer id="main-footer">
       <div className="container footer-container">
         <div className="footer-items">
           <div>
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={ handleSubmit }>
               <input
                 type="text"
                 name="fullname"
@@ -42,13 +51,9 @@ const Footer = () => {
                 className="form-control"
               ></textarea>
 
-              <input
-                type="submit"
-                value="Send"
+              <button
                 className="form-control submit-btn"
-
-                disabled
-              />
+              >Send </button>
             </form>
           </div>
           {/* <!-- sitemap --> */}
