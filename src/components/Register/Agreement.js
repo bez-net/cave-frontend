@@ -31,22 +31,14 @@ const Agreement = ({ formData, setForm, navigation }) => {
       body: JSON.stringify(formData)
     }).then( (res) => {
 
-      // send emails
-      // setIsLoading(false) ;
-
       // redirect to success page 
       if(res.ok) {
         history.push('/success');
       }
-      
-      // console.log('registration successful');
-      // console.log(res);
 
     }).catch(err => {
         console.log(err.message);
     });
-
-    // console.log(formData);
   }
 
   return (

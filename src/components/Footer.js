@@ -46,6 +46,8 @@ const Footer = () => {
                 type="submit"
                 value="Send"
                 className="form-control submit-btn"
+
+                disabled
               />
             </form>
           </div>
@@ -73,9 +75,7 @@ const Footer = () => {
               <Link to="/register" className="nav-link">
                 <li>Register</li>
               </Link>
-              {/* <Link to="/login" className="nav-link">
-                <li>Login</li>
-              </Link> */}
+              <a href="https://seminary.adullam.ng/main/login_form.php"  className="nav-link"><li>Login</li></a> 
             </ul>
           </div>
         </div>
