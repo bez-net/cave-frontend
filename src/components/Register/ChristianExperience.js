@@ -25,7 +25,7 @@ const ChristianExperience = ({ formData, setForm, navigation }) => {
     let [formOkay, setFormOkay] = useState(false);
 
     const validate = (e) => {
-      if(bornagain && salvbrief && godsworkings && callofgod && intoministry && spiritgifts && reason && churchname && churchaddress && pastorname && pastoremail && pastorphone && churchinvolve && waterbapt && baptdate && holyghostbapt ){
+      if(bornagain && salvbrief && godsworkings && callofgod && intoministry && spiritgifts && reason && churchname && churchaddress && pastorname && pastoremail && pastorphone && churchinvolve && waterbapt && holyghostbapt ){
           
         e.preventDefault();
         setFormOkay(true);
