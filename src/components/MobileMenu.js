@@ -69,7 +69,7 @@ const MobileMenu = () => {
             <li>Contact Us</li>
           </NavHashLink>
           <Link
-            to="/register"
+            to="/comingSoon"
             onClick={hideOverlayMobileMenu}
             className="nav-link"
           >

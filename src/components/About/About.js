@@ -128,7 +128,7 @@ export default function About() {
                 </p>
 
                 {/* <!-- apply --> */}
-                <Link to="/register" class="apply-btn">
+                <Link to="/comingSoon" class="apply-btn">
                   Apply Now
                 </Link>
               </div>
@@ -153,7 +153,7 @@ export default function About() {
                 </p>
 
                 {/* <!-- apply --> */}
-                <Link to="/register" class="apply-btn">
+                <Link to="/comingSoon" class="apply-btn">
                   Apply Now
                 </Link>
               </div>

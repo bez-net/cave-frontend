@@ -14,6 +14,7 @@ import { Registration } from './components/Register/Registration';
 import About from './components/About/About';
 import ScrollToTop from './components/ScrollToTop';
 import { Success } from './components/Register/Success';
+import { ComingSoon } from './components/Register/ComingSoon';
 
 
 function App() {
@@ -38,6 +39,11 @@ function App() {
 
           <Route path="/register">
             <Registration />
+          </Route>
+
+          
+          <Route path="/comingSoon">
+            <ComingSoon />
           </Route>
             
           <Route path="/success">

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import logo from "../images/adullam-logo.png";
 import {useHistory} from 'react-router-dom'
-import ScrollToTop from "./ScrollToTop";
+// import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
 
@@ -77,7 +77,7 @@ const Footer = () => {
               <NavHashLink to="/#main-footer" smooth className="nav-link">
                 <li>Contact Us</li>
               </NavHashLink>
-              <Link to="/register" className="nav-link">
+              <Link to="/comingSoon" className="nav-link">
                 <li>Register</li>
               </Link>
               <a href="https://seminary.adullam.ng/main/login_form.php"  className="nav-link"><li>Login</li></a> 
