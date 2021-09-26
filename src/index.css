@@ -281,7 +281,7 @@ h3 {
 }
 .apply-btn {
   text-decoration: none;
-  background: var(--adullam-blue);
+  background: #ed3648;
   color: #fff;
   font-weight: bold;
   border-radius:0.5rem ;
