@@ -75,13 +75,7 @@ const MobileMenu = () => {
           >
             <li>Register</li>
           </Link>
-          {/* <Link
-            to="/login"
-            onClick={hideOverlayMobileMenu}
-            className="nav-link"
-          >
-            <li>Login</li>
-          </Link> */}
+          <a href="https://adullam.ng/main/login_form.php"  className="nav-link"><li>Login</li></a> 
         </ul>
       </nav>
     </div>
