@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import logo from "../../images/adullam-logo.png";
 import ScrollToTop from "../ScrollToTop";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Agreement = ({ formData, setForm, navigation }) => {
 
@@ -9,7 +9,7 @@ const Agreement = ({ formData, setForm, navigation }) => {
 
   let [formOkay, setFormOkay] = useState(false);
   // const [isLoading, setIsLoading] = useState(false);
-  // const history = useHistory();
+  const history = useHistory();
 
   const validate = (e) => {
     
@@ -35,18 +35,18 @@ const Agreement = ({ formData, setForm, navigation }) => {
       // setIsLoading(false) ;
 
       // redirect to success page 
-
-      // history.push('/success-page');
+      if(res.ok) {
+        history.push('/success');
+      }
+      
       // console.log('registration successful');
-      console.log(res);
+      // console.log(res);
 
     }).catch(err => {
         console.log(err.message);
     });
 
-    console.log(formData);
-
-    
+    // console.log(formData);
   }
 
   return (

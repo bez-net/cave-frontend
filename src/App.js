@@ -13,6 +13,7 @@ import Home from './components/Home';
 import { Registration } from './components/Register/Registration';
 import About from './components/About/About';
 import ScrollToTop from './components/ScrollToTop';
+import { Success } from './components/Register/Success';
 
 
 function App() {
@@ -39,9 +40,13 @@ function App() {
             <Registration />
           </Route>
             
-          {/* <Route path="/login">
-            <Login />
-          </Route> */}
+          <Route path="/success">
+            <Success />
+          </Route>
+
+          <Route path="*">
+            <Home />
+          </Route>
 
         </Switch>
       </main>
