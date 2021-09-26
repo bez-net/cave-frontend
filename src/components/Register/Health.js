@@ -169,11 +169,12 @@ const Health = ({ formData, setForm, navigation }) => {
 
             <select
               className="form__control--input"
-              name="treatdrugadic"
+              name="treatdrugaddic"
               value={ treatdrugaddic } 
               onChange={ setForm }
               required
             >
+              <option value="">Select</option>
               <option value="no">No</option>
               <option value="yes">Yes</option>
             </select>
