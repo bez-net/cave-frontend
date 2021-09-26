@@ -75,7 +75,7 @@ const MobileMenu = () => {
           >
             <li>Register</li>
           </Link>
-          <a href="https://adullam.ng/main/login_form.php"  className="nav-link"><li>Login</li></a> 
+          <a href="https://seminary.adullam.ng"  className="nav-link"><li>Login</li></a> 
         </ul>
       </nav>
     </div>
