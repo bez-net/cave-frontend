@@ -25,7 +25,7 @@ const Agreement = ({ formData, setForm, navigation }) => {
     console.log('PERFORM POST REQUEST TO DATABAASE !!! ');
     // setIsLoading(true);
 
-    fetch('api.beznet.org/adullams', {
+    fetch('https://www.adullam.ng/signup', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
