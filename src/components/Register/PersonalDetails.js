@@ -5,13 +5,13 @@ import ScrollToTop from "../ScrollToTop";
 
 const PersonalDetails = ({ formData, setForm, navigation }) => {
 
-  const { firstname, lastname, middlename, dob, gender, address, city, state, country, zip, phoneno, email, nationality, profession } = formData;
+  const { first_name, last_name, middle_name, dob, gender, address, city, state, country, zip, phone_no, email, nationality, profession } = formData;
 
   let [formOkay, setFormOkay] = useState(false);
 
   const validate = (e) => {
 
-    if(firstname && lastname && middlename && dob && gender && address && city && state && country && zip && phoneno && email && nationality && profession) {
+    if(first_name && last_name && middle_name && dob && gender && address && city && state && country && zip && phone_no && email && nationality && profession) {
 
       e.preventDefault();
       setFormOkay(true);
@@ -39,8 +39,8 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
               type="text"
               className="form__control--input"
               placeholder="First Name"
-              name="firstname"
-              value={ firstname }
+              name="first_name"
+              value={ first_name }
               onChange={ setForm }
               required
             />
@@ -52,8 +52,8 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
               type="text"
               className="form__control--input"
               placeholder="Last Name"
-              name="lastname"
-              value={ lastname }
+              name="last_name"
+              value={ last_name }
               onChange={ setForm }
               required
             />
@@ -64,8 +64,8 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
               type="text"
               className="form__control--input"
               placeholder="Middle Name"
-              name="middlename"
-              value={ middlename }
+              name="middle_name"
+              value={ middle_name }
               onChange={ setForm }
               required
             />
@@ -154,8 +154,8 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
               type="text"
               className="form__control--input"
               placeholder="Phone No. (WhatsApp)"
-              name="phoneno"
-              value={ phoneno }
+              name="phone_no"
+              value={ phone_no }
               onChange={ setForm }
               required
             />
