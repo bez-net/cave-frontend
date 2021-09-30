@@ -163,4 +163,9 @@
         width: 100%;
         padding: .6rem;
     }
+    .formNavigator {
+        font-size: 1rem;
+        padding: .5rem;
+        border-radius: 100px;
+    }
 }
