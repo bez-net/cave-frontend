@@ -13,7 +13,7 @@ const Slider = () => {
             <div className="txt">
                 <h1>ADULLAM - RCN Bible Seminary</h1>
                 <p>Apply for January 2022 Session</p>
-                <Link to="/comingSoon" className="apply-btn">Apply Now</Link>
+                <Link to="/register" className="apply-btn">Apply Now</Link>
             </div>
             <img src={sliderImg} alt="slider display gallery" className="slider-img" />
         </div>

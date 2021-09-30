@@ -22,9 +22,8 @@ const Agreement = ({ formData, setForm, navigation }) => {
   const handleSubmit = (e) => {
 
     e.preventDefault();
-    console.log('PERFORM POST REQUEST TO DATABAASE !!! ');
+    // console.log('PERFORM POST REQUEST TO DATABAASE !!! ');
     // setIsLoading(true);
-    console.log(formData);
 
     fetch('https://adullam.ng/api/person', {
       method: 'POST',
