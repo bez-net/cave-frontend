@@ -11,7 +11,7 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
 
   const validate = (e) => {
 
-    if(first_name && last_name && middle_name && dob && gender && address && city && state && country && zip && phone_no && email && nationality && profession) {
+    if(first_name && last_name && dob && gender && address && city && state && country && zip && phone_no && email && nationality && profession) {
 
       e.preventDefault();
       setFormOkay(true);
@@ -59,7 +59,7 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
             />
           </div>
           <div className="form__control">
-            <label>Middle Name<span className="required">*</span></label>
+            <label>Middle Name</label>
             <input
               type="text"
               className="form__control--input"
@@ -67,7 +67,6 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
               name="middle_name"
               value={ middle_name }
               onChange={ setForm }
-              required
             />
           </div>
           <div className="form__control">
