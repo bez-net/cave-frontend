@@ -19,7 +19,7 @@ export const Success = () => {
       <div className="register__header">
         <img src={logo} className="reg__logo" alt="adullam logo" />
         <h3>Congratulations, you have been successfully registered.</h3>
-        <p>You will receive a mail in your provided E-mail shortly!</p>
+        <p>More Information will be communicated to you through your E-mail, Thank You!</p>
         <button className="formNavigator forward" style={{ marginTop: "2rem" }} onClick={ handleDone }>
           Done <i className="fa fa-check"></i>
         </button>
