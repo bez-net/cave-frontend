@@ -15,6 +15,7 @@ import About from './components/About/About';
 import ScrollToTop from './components/ScrollToTop';
 import { Success } from './components/Register/Success';
 import { ComingSoon } from './components/Register/ComingSoon';
+import { RefereeForm } from './components/Register/RefereeForm';
 
 
 function App() {
@@ -50,8 +51,8 @@ function App() {
             <Success />
           </Route>
 
-          <Route path="*">
-            <Home />
+          <Route path="/reference">
+            <RefereeForm />
           </Route>
 
         </Switch>

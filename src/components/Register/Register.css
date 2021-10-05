@@ -54,6 +54,7 @@
     padding: .6rem;
     margin-top: 1rem;
     border-radius: 3px;
+    margin-bottom: 1rem;
 }
 .register__content .note {
     grid-column: 1/-1;

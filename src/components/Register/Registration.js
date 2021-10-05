@@ -1,7 +1,5 @@
 import logo from "../../images/adullam-logo.png";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useForm, useStep } from "react-hooks-helper";
-
 import "./Register.css";
 import Condition from "./Condition";
 import Agreement from "./Agreement";
