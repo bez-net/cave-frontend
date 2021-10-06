@@ -13,9 +13,9 @@ import Financials from "./Financials";
 
 const defaultData = {
 
-  firs_tname: "",
+  first_name: "",
   last_name: "",
-  middl_ename: "",
+  middle_name: "",
   dob: "",
   gender: "",
   address: "",

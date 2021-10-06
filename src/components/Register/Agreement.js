@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import logo from "../../images/adullam-logo.png";
 import ScrollToTop from "../ScrollToTop";
 import { useHistory } from "react-router-dom";
@@ -7,22 +7,14 @@ const Agreement = ({ formData, setForm, navigation }) => {
 
   const { agree } = formData;
 
-  let [formOkay, setFormOkay] = useState(false);
+  
   // const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
-
-  const validate = (e) => {
-    
-    if(agree) {
-      e.preventDefault();
-      setFormOkay(true);
-    }
-  }
 
   const handleSubmit = (e) => {
 
     e.preventDefault();
-    // console.log('PERFORM POST REQUEST TO DATABAASE !!! ');
+    console.log(formData);
     // setIsLoading(true);
 
     fetch('https://adullam.ng/api/person', {
@@ -95,16 +87,12 @@ const Agreement = ({ formData, setForm, navigation }) => {
             >
               &larr; Back
             </button>
-
-            { formOkay ? 
               
               <button onClick={ handleSubmit } className="formNavigator forward">Register <i className="fa fa-check"></i></button> : 
-              
-              <button className="formNavigator forward" onClick={ validate } >Next &nbsp;</button> 
-            }
+
           </div>
         </div>
-        { console.log(formOkay) }
+        
       </form>
     </div>
   );
