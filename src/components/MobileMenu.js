@@ -69,13 +69,25 @@ const MobileMenu = () => {
             <li>Contact Us</li>
           </NavHashLink>
           <Link
+            to="/sponsorship"
+            onClick={hideOverlayMobileMenu}
+            className="nav-link"
+          >
+            <li>Sponsorship/Partnership</li>
+          </Link>
+          <Link
             to="/register"
             onClick={hideOverlayMobileMenu}
             className="nav-link"
           >
             <li>Register</li>
           </Link>
-          <a href="https://seminary.adullam.ng/main/login_form.php"  className="nav-link"><li>Login</li></a> 
+          <a
+            href="https://seminary.adullam.ng/main/login_form.php"
+            className="nav-link"
+          >
+            <li>Login</li>
+          </a>
         </ul>
       </nav>
     </div>

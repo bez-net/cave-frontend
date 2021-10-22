@@ -12,7 +12,6 @@ import PersonalDetails from "./PersonalDetails";
 import Financials from "./Financials";
 
 const defaultData = {
-
   first_name: "",
   last_name: "",
   middle_name: "",
@@ -84,9 +83,8 @@ const defaultData = {
     accomoption: "",
     scholarship: "",
     scholreason: "",
-    agree: ""
-  }
-
+    agree: "",
+  },
 };
 
 const steps = [
@@ -102,36 +100,35 @@ const steps = [
 ];
 
 export const Registration = () => {
+  const [formData, setForm] = useForm(defaultData);
+  const { step, navigation } = useStep({
+    steps,
+    initialStep: 0,
+  });
 
-    const [formData, setForm] = useForm(defaultData);
-    const { step, navigation } = useStep({
-        steps,
-        initialStep: 0,
-    });
+  const props = { formData, setForm, navigation };
 
-    const props = { formData, setForm, navigation }
-
-   switch (step.id) {
-       case 'personalDetails':
-           return <PersonalDetails {...props} />
-        case 'financials':
-            return <Financials {...props} />
-        case 'relationships':
-            return <Relationship {...props} />
-        case 'christianExperience':
-            return <ChristianExperience {...props} />
-        case 'health':
-            return <Health {...props} />
-        case 'workContactReference':
-            return <WorkContactReference {...props} />
-        case 'optAccScholarship':
-            return <OptAccScholarship {...props} />
-        case 'condition':
-            return <Condition {...props} />
-        case 'agreement':
-            return <Agreement {...props} />
-       default:
-   }
+  switch (step.id) {
+    case "personalDetails":
+      return <PersonalDetails {...props} />;
+    case "financials":
+      return <Financials {...props} />;
+    case "relationships":
+      return <Relationship {...props} />;
+    case "christianExperience":
+      return <ChristianExperience {...props} />;
+    case "health":
+      return <Health {...props} />;
+    case "workContactReference":
+      return <WorkContactReference {...props} />;
+    case "optAccScholarship":
+      return <OptAccScholarship {...props} />;
+    case "condition":
+      return <Condition {...props} />;
+    case "agreement":
+      return <Agreement {...props} />;
+    default:
+  }
 
   return (
     <div>
@@ -139,9 +136,7 @@ export const Registration = () => {
         <div className="register__header">
           <img src={logo} className="reg__logo" alt="adullam logo" />
           <h2 className="register__heading">Registration Form</h2>
-          <p>
-            Diploma in Theology and Ministry Application.
-          </p>
+          <p>Diploma in Theology and Ministry Application.</p>
         </div>
       </div>
     </div>
