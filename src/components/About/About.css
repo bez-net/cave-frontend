@@ -1,4 +1,3 @@
-
 /* COLOURS */
 /* 
 ADULLAM BLUE            #32A1D5,
@@ -8,173 +7,171 @@ LIGHT GRAY              #EEEEEE
 */
 
 :root {
-    /* color variables */
-    --adullam-blue: #32A1D5;
-    --footer-black: #1E1E1E;
-    --gray-colour: #c4c4c4;
-    --lightgray: #EEEEEE;
+  /* color variables */
+  --adullam-blue: #32a1d5;
+  --footer-black: #1e1e1e;
+  --gray-colour: #c4c4c4;
+  --lightgray: #eeeeee;
 }
 /* display header */
 
 .about__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url('../../images/slider-image.jpg');
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../images/slider-image.jpg");
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* about display header */
 .about__header header h1 {
-    color: #fff;
+  color: #fff;
 }
 .more__info--content {
-    display: flex;
+  display: flex;
 }
 .info__img--container {
-    margin: 1rem;
+  margin: 1rem;
 }
 .info__img--container img {
-    width: 100%;
-    height:
-    auto;
+  width: 100%;
+  height: auto;
 }
 .more__info--text {
-    text-align: justify;
+  text-align: justify;
 }
 /* semester section */
 #semesters {
-    background: var(--lightgray);
-    padding: 2rem 0;
+  background: var(--lightgray);
+  padding: 2rem 0;
 }
 .semesters__details {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .semesters-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .semester-card {
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #ccc;
-    border-radius: 0.8rem;
-    max-width: 23rem;
-    min-height: 28rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ccc;
+  border-radius: 0.8rem;
+  max-width: 23rem;
+  min-height: 28rem;
 }
 .semester-card p {
-    line-height: 1.7;
-    text-align: justify;
+  line-height: 1.7;
+  text-align: justify;
 }
 .semester-card .readmore-btn {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 /* program options */
 
 .program__options--container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .program__option {
-    margin: 1rem;
-    text-align: center;
-    max-width: 30rem;
+  margin: 1rem;
+  text-align: center;
+  max-width: 30rem;
 }
 .program__option--img {
-    width: 100%;
-    height: auto;
-    margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
 }
 .program__option--img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .program__option--text p {
-    text-align: justify;
-    line-height: 1.5;
-    margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
 /* faculties */
 .faculty-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .faculty-card {
-    margin: 1rem;
+  margin: 1rem;
 }
 .faculty-card img {
-width: 12.5rem;
-height: 12.2rem;
-border-radius: 50%;
-margin-bottom: 1rem;
+  width: 12.5rem;
+  height: 12.2rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 .faculty-card p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--adullam-blue);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--adullam-blue);
 }
 
-@media all and (max-width: 48rem){
-    .about__header {
-        height: 25vh;
-    }
-    .about__header h1 {
-        font-size: 2.7rem;
-    }
+@media all and (max-width: 48rem) {
+  .about__header {
+    height: 25vh;
+  }
+  .about__header h1 {
+    font-size: 2.7rem;
+  }
 }
-@media screen and (max-width: 42.5rem){
-    .about__header h1 {
-        font-size: 2rem;
-    }
-    .more__info--content {
-        flex-wrap: wrap;
-        padding: 1.5rem;
-    }
-    .semesters__details  p {
-        padding: 0 2rem;
-    }
-    .semesters-card {
-        /* padding: 0 4rem; */
-        flex-wrap: wrap;
-    }
-    .program__options--container {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 42.5rem) {
+  .about__header h1 {
+    font-size: 2rem;
+  }
+  .more__info--content {
+    flex-wrap: wrap;
+    padding: 1.5rem;
+  }
+  .semesters__details p {
+    padding: 0 2rem;
+  }
+  .semesters-card {
+    /* padding: 0 4rem; */
+    flex-wrap: wrap;
+  }
+  .program__options--container {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 33.75rem) {
-
-        /* Hide main navigation and show mobile menu */
-        .main-header {
-            display: none;
-        }
-        .mobile-menu {
-            display: block;
-        }
-        .menu-bar {
-            background: var(--adullam-blue);
-        }
-    .about__header {
-        height: 20vh;
-    }
-    .about__header h1 {
-        font-size: 1.1rem;
-    }
-    .semester-text p {
-        text-align: center;
-        padding: 0.2rem;
-    }
-
+  /* Hide main navigation and show mobile menu */
+  .main-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .menu-bar {
+    background: var(--adullam-blue);
+  }
+  .about__header {
+    height: 20vh;
+  }
+  .about__header h1 {
+    font-size: 1.1rem;
+  }
+  .semester-text p {
+    text-align: center;
+    padding: 0.2rem;
+  }
 }
