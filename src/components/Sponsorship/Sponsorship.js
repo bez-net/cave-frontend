@@ -1,28 +1,31 @@
 import React from "react";
 import "./sponsorship.css";
-import "./sponsor.css";
+import Pounds from "../../images/pound.svg";
+import Dollars from "../../images/dollar.svg";
+import Euro from "../../images/euro.svg";
+import Naira from "../../images/naira.svg";
 
 export const Sponsor = () => {
   return (
     <main>
       {/* Header Banner */}
-      <div class="sponsor__header">
-        <header class="section-header">
+      <div className="sponsor__header">
+        <header className="section-header">
           <h1>SPONSORSHIP / PARTNERSHIP</h1>
         </header>
       </div>
 
       {/* more info section */}
       <section id="more-info">
-        <header class="section-header">
+        <header className="section-header">
           <h2>Donation Details</h2>
         </header>
-        <div class="more__info container">
-          <div class="more__info--content">
-            <div class="info__img--container">
+        <div className="more__info container">
+          <div className="more__info--content">
+            <div className="info__img--container">
               {/* <img src={provost} alt="adullam provost" /> */}
             </div>
-            <div class="more__info--text">
+            <div className="more__info--text">
               <p>
                 Due to the demography of applicants at Adullam, such demography
                 is barely transiting from being dependants and may not be able
@@ -42,8 +45,8 @@ export const Sponsor = () => {
         </div>
       </section>
 
-      <div class="row1-container">
-        <div class="box box-down cyan">
+      <div className="row1-container">
+        <div className="box box-down cyan">
           <h2>Donation in Pounds</h2>
           <p>
             Correspondent Bank: <strong>Citibank London</strong>
@@ -68,10 +71,10 @@ export const Sponsor = () => {
           <p>
             Beneficiary Account No: <strong>3003413095</strong>
           </p>
-          <img src="https://www.svgrepo.com/show/106807/pound.svg" alt="" />
+          <img src={Pounds} alt="Pounds" />
         </div>
 
-        <div class="box red">
+        <div className="box red">
           <h2>Donation in Dollar</h2>
           <p>
             Correspondent Bank: <strong>Citibank New York</strong>
@@ -99,10 +102,10 @@ export const Sponsor = () => {
           <p>
             Beneficiary Account No: <strong> 3003413033</strong>
           </p>
-          <img src="https://www.svgrepo.com/show/10035/dollar.svg" alt="" />
+          <img src={Dollars} alt="Dollars" />
         </div>
 
-        <div class="box box-down blue">
+        <div className="box box-down blue">
           <h2>Donation in Euro</h2>
           <p>
             Correspondent Bank: <strong>Citibank London</strong>
@@ -133,11 +136,11 @@ export const Sponsor = () => {
           <p>
             Beneficiary Account No: <strong>3003413088</strong>
           </p>
-          <img src="https://www.svgrepo.com/show/209478/euro.svg" alt="euro" />
+          <img src={Euro} alt="euro" />
         </div>
       </div>
-      <div class="row2-container">
-        <div class="box orange">
+      <div className="row2-container">
+        <div className="box orange">
           <h2>Donation in Naira</h2>
           <p>
             Account Name:
@@ -150,10 +153,7 @@ export const Sponsor = () => {
           <p>
             Bank Name: <strong>United Bank for Africa</strong>
           </p>
-          <img
-            src="https://www.svgrepo.com/show/46604/nigeria-naira-currency-symbol.svg"
-            alt="naira"
-          />
+          <img src={Naira} alt="naira" />
         </div>
       </div>
 

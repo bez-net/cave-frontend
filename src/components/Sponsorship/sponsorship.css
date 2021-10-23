@@ -12,6 +12,20 @@ LIGHT GRAY              #EEEEEE
   --footer-black: #1e1e1e;
   --gray-colour: #c4c4c4;
   --lightgray: #eeeeee;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(228, 58%, 14%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
 }
 /* display header */
 
@@ -94,5 +108,95 @@ LIGHT GRAY              #EEEEEE
   .semester-text p {
     text-align: center;
     padding: 0.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 20px;
+}
+
+img {
+  float: right;
+}
+.box > img {
+  width: 50px;
+}
+
+@media (max-width: 450px) {
+  .box {
+    height: 596px;
+  }
+  .box > img {
+    width: 50px;
+    margin-top: -1.7rem;
+  }
+  .sponsor__header {
+    height: 27vh;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+    text-align: center;
+    height: 500px;
+  }
+  .box > img {
+    width: 50px;
+    margin-top: -1.7rem;
+  }
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  border-top: 3px solid var(--orange);
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-down {
+    position: relative;
+    top: 150px;
+  }
+  .box {
+    width: 20%;
+  }
+  .header p {
+    width: 30%;
   }
 }
