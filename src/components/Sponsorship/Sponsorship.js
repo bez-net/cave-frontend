@@ -1,6 +1,6 @@
 import React from "react";
 import "./sponsorship.css";
-import "./index.css";
+import "./sponsor.css";
 
 export const Sponsor = () => {
   return (
