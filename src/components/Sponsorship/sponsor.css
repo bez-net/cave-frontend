@@ -67,6 +67,9 @@ h1:last-of-type {
 img {
   float: right;
 }
+.box-down > img {
+  width: 50px;
+}
 
 @media (max-width: 450px) {
   .box {
