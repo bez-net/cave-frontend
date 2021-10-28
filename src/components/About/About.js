@@ -10,28 +10,26 @@ import adullamProvost from "../../images/provost.jpg";
 import barrGodsent from "../../images/Rev_Godsent.jpg";
 import revTony from "../../images/Rev_Tony.jpg";
 
-
-
 import { Link } from "react-router-dom";
 
 export default function About() {
   return (
     <main>
       {/* Header Banner */}
-      <div class="about__header">
-        <header class="section-header">
+      <div className="about__header">
+        <header className="section-header">
           <h1>ABOUT ADULLAM</h1>
         </header>
       </div>
 
       {/* more info section */}
       <section id="more-info">
-        <div class="more__info container">
-          <div class="more__info--content">
-            <div class="info__img--container">
+        <div className="more__info container">
+          <div className="more__info--content">
+            <div className="info__img--container">
               <img src={provost} alt="adullam provost" />
             </div>
-            <div class="more__info--text">
+            <div className="more__info--text">
               <p>
                 The school is called RCN Bible SEMINARY or ADULLAM. Adullam
                 means Justice of the people. It was mentioned eight (8) times in
@@ -63,19 +61,19 @@ export default function About() {
 
       {/* semesters */}
       <section id="semesters">
-        <header class="section-header">
+        <header className="section-header">
           <h2>Semesters</h2>
         </header>
-        <div class="container semesters__details">
+        <div className="container semesters__details">
           <p>
             The program duration has 2 semesters of four (4) months each. Each
             of the semesters are schedule during the February or July sessions
             depending on the time of enrolment.
           </p>
 
-          <div class="semesters-card">
-            <div class="semester-card">
-              <div class="semester-text">
+          <div className="semesters-card">
+            <div className="semester-card">
+              <div className="semester-text">
                 <h3>First Semester</h3>
 
                 <p>
@@ -86,12 +84,11 @@ export default function About() {
                   understanding of core Christian teachings. And a framework for
                   understanding, interpreting and applying Biblical truth.
                 </p>
-
               </div>
             </div>
             {/* <!-- end of card --> */}
-            <div class="semester-card">
-              <div class="semester-text">
+            <div className="semester-card">
+              <div className="semester-text">
                 <h3>Second Semester</h3>
                 <p>
                   The second semester is also a four (4) months intensive
@@ -109,17 +106,27 @@ export default function About() {
 
       {/* <!-- program options --> */}
       <section id="program-options">
-        <header class="section-header">
+        <header className="section-header">
           <h1>Program Options</h1>
         </header>
-        <div class="container">
-          <div class="program__options--container">
-            <div class="program__option">
+        <div className="container">
+          <p>
+            Payment can be made once for the entire program, or in two
+            instalments at the beginning of each semester.{" "}
+            <i>
+              Note: The exchange rate for Students paying into the Naira Account
+              is N400 per Dollar.
+            </i>
+          </p>
+        </div>
+        <div className="container">
+          <div className="program__options--container">
+            <div className="program__option">
               <h3>On-Campus</h3>
-              <div class="program__option--img">
+              <div className="program__option--img">
                 <img src={onCampus} alt="On Campus Option" />
               </div>
-              <div class="program__option--text">
+              <div className="program__option--text">
                 <p>
                   The On-Campus option is a full residency program that offers a{" "}
                   <strong>Diploma</strong> in Theology and Ministry. The
@@ -127,19 +134,26 @@ export default function About() {
                   and a ministry practicum, which amounts to 60 credit hours.
                 </p>
 
+                {/* ADD PROGRAM FEES 28 OCTOBER ON CAMPUS */}
+                <p>
+                  <h3> Program Fees:</h3>{" "}
+                  <strong> $1,000 (per semester) </strong> - This covers
+                  Registration, tuition, and Administrative charge.
+                </p>
+
                 {/* <!-- apply --> */}
-                <Link to="/register" class="apply-btn">
+                <Link to="/register" className="apply-btn">
                   Apply Now
                 </Link>
               </div>
             </div>
             {/* <!-- end of card --> */}
-            <div class="program__option">
+            <div className="program__option">
               <h3>Online Option</h3>
-              <div class="program__option--img">
+              <div className="program__option--img">
                 <img src={online} alt="Online Option" />
               </div>
-              <div class="program__option--text">
+              <div className="program__option--text">
                 <p>
                   In to response to the global needs for spiritual training and
                   equipping of those who cannot make it for the residency
@@ -151,9 +165,16 @@ export default function About() {
                   <strong>Certificate of Participation</strong> in Theology and
                   Ministry.
                 </p>
+                {/* ADD PROGRAM FEES 28 OCTOBER ONLINE STUDENTS  */}
+                <p>
+                  <h3>Online program Fees:</h3>{" "}
+                  <strong>$1,200 (per semester) </strong> - This covers
+                  Registration, tuition, Administrative charges and Internet
+                  Management Fee.
+                </p>
 
                 {/* <!-- apply --> */}
-                <Link to="/register" class="apply-btn">
+                <Link to="/register" className="apply-btn">
                   Apply Now
                 </Link>
               </div>
@@ -164,33 +185,120 @@ export default function About() {
         </div>
       </section>
 
+      {/* PAYMENT OPTION AND PROVOST SCHOLARSHIP GRANT   */}
+      <section id="semesters">
+        <header className="section-header">
+          <h1>Provost Scholarship Grants</h1>
+        </header>
+        <div className="container semesters__details">
+          <p>
+            Scholarship grants are made available through the generous donations
+            of kind partners.
+          </p>
+
+          <div className="semesters-card">
+            <div className="semester-card">
+              <div className="semester-text">
+                <h3>For On-Campus Students</h3>
+
+                <p>
+                  The Scholarship grant is <strong> 86%</strong> of the tuition
+                  fee which is only available upon request for those who truly
+                  believe that they cannot afford the fees. Please note that all
+                  Scholarship Grants are subject to availability of funds and
+                  the decision of the Scholarship Grants Board.
+                </p>
+              </div>
+            </div>
+            {/* <!-- end of card --> */}
+            <div className="semester-card">
+              <div className="semester-text">
+                <h3>For Online Students</h3>
+                <p>
+                  The Scholarship grant is <strong>80%</strong> of the tuition
+                  fee which is only available upon request for those who truly
+                  believe that they cannot afford the fees. Please note that all
+                  Scholarship Grants are subject to availability of funds and
+                  the decision of the Scholarship Grants Board.
+                </p>
+              </div>
+            </div>
+            {/* <!-- end of card --> */}
+          </div>
+          {/* <!-- end of semesters-container --> */}
+        </div>
+      </section>
+
+      {/* this is the ACCOMODATION SESSION  */}
+      <section className="semesters accomodation">
+        <header className="section-header">
+          <h1>Accomodation</h1>
+        </header>
+        <div className="container semesters__details">
+          <p>
+            Scholarship grants are made available through the generous donations
+            of kind partners.
+          </p>
+
+          <div className="semesters-card">
+            <div className="semester-card">
+              <div className="semester-text">
+                <h3>Off-Campus</h3>
+
+                <p>
+                  Some Students rent an apartment in Makurdi town, with the
+                  average range of N80,000 - N150,000 for single room. It is
+                  entirely up to the students to make the arrangements for
+                  themselves. However, Adullam Help Desk{" "}
+                  <a href="tel:+23490145265705">+2349014526570</a>will be glad
+                  to support where necessary.
+                </p>
+              </div>
+            </div>
+            {/* <!-- end of card --> */}
+            <div className="semester-card">
+              <div className="semester-text">
+                <h3>On-Campus</h3>
+                <p>
+                  There is a shared room space of 4 persons per room within the
+                  school environment for N40,000 per session (covering for the
+                  two semesters).
+                </p>
+              </div>
+            </div>
+            {/* <!-- end of card --> */}
+          </div>
+          {/* <!-- end of semesters-container --> */}
+        </div>
+      </section>
+
       {/* <!-- faculties --> */}
       <section id="faculties">
-        <header class="section-header">
+        <header className="section-header">
           <h1>Meet the Faculties</h1>
         </header>
-        <div class="container faculty-content">
-          <div class="faculty-cards">
-            <div class="faculty-card">
-              <img src={ apostleArome } alt="Adullam Chairman" />
+        <div className="container faculty-content">
+          <div className="faculty-cards">
+            <div className="faculty-card">
+              <img src={apostleArome} alt="Adullam Chairman" />
               <h4>Apostle Arome Osayi</h4>
               <p>Chairman</p>
             </div>
             {/* <!-- end of card --> */}
-            <div class="faculty-card">
-              <img src={ adullamProvost } alt="Adullam Provost" />
+            <div className="faculty-card">
+              <img src={adullamProvost} alt="Adullam Provost" />
               <h4>Rev. Daniel Ogidi</h4>
               <p>Provost</p>
             </div>
             {/* <!-- end of card --> */}
-            <div class="faculty-card">
-              <img src={ revTony } alt="Adullam Dean Students Affairs" />
+            <div className="faculty-card">
+              <img src={revTony} alt="Adullam Dean Students Affairs" />
               <h4>Rev. Anthony George</h4>
               <p>Dean Students</p>
             </div>
             {/* <!-- end of card --> */}
-            <div class="faculty-card">
-              <img src={ barrGodsent } alt="Adullam Faculty" />
+            <div className="faculty-card">
+              <img src={barrGodsent} alt="Adullam Faculty" />
               <h4>Rev. Godsent Ogbe</h4>
               <p>Faculty</p>
             </div>
@@ -198,7 +306,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      { window.scrollTo(0,0) }
-     </main>
+      {window.scrollTo(0, 0)}
+    </main>
   );
 }
