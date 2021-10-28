@@ -28,7 +28,7 @@ export const Sponsor = () => {
             <div className="more__info--text">
               <p>
                 Due to the demography of applicants at Adullam, such demography
-                is barely transiting from being dependants and may not be able
+                that barely transited from being dependants and may not be able
                 to bear the cost of the program. We have largely had to make
                 full or partial scholarships (as high as 86%) available to as
                 many that would need, depending on the generosity of kindhearted
