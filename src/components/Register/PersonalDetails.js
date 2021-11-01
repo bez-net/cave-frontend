@@ -52,7 +52,7 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
         <span className="warn warning"></span>
         <i>
           {" "}
-          Kindly use <strong> Firefox web browser </strong>for best experience.
+          Kindly use <strong> updated web browser </strong>for best experience.
         </i>
       </div>
       {/* END OF NOTIFICATION OF BROSWER  */}
@@ -134,9 +134,10 @@ const PersonalDetails = ({ formData, setForm, navigation }) => {
             >
               <option value="">Select</option>
               <option value="male">Male</option>
-              <option value="female" selected>
+              {/* <option value="female" selected>
                 Female
-              </option>
+              </option> */}
+              <option value="female">Female</option>
             </select>
           </div>
           <div className="form__control">

@@ -49,10 +49,10 @@ export default function About() {
                 1:15).
               </p>
 
-              <p>There are two sessions annually:</p>
+              <p>There are two enrollments annually:</p>
               <ul>
-                <li>February Session</li>
-                <li>July Session</li>
+                <li>January Enrollment</li>
+                <li>July Enrollment</li>
               </ul>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function About() {
         <div className="container semesters__details">
           <p>
             The program duration has 2 semesters of four (4) months each. Each
-            of the semesters are schedule during the February or July sessions
+            of the semesters are schedule during the January or July enrollment
             depending on the time of enrolment.
           </p>
 
@@ -110,16 +110,6 @@ export default function About() {
           <h1>Program Options</h1>
         </header>
         <div className="container">
-          <p>
-            Payment can be made once for the entire program, or in two
-            instalments at the beginning of each semester.{" "}
-            <i>
-              Note: The exchange rate for Students paying into the Naira Account
-              is N400 per Dollar.
-            </i>
-          </p>
-        </div>
-        <div className="container">
           <div className="program__options--container">
             <div className="program__option">
               <h3>On-Campus</h3>
@@ -135,11 +125,31 @@ export default function About() {
                 </p>
 
                 {/* ADD PROGRAM FEES 28 OCTOBER ON CAMPUS */}
-                <p>
+                <div>
                   <h3> Program Fees:</h3>{" "}
-                  <strong> $1,000 (per semester) </strong> - This covers
-                  Registration, tuition, and Administrative charge.
-                </p>
+                  <p>
+                    <strong> $1,000 (per semester) </strong>- This covers
+                    Registration, tuition, and Administrative charge. <br />{" "}
+                    Payment can be made once for the entire program, or in two
+                    instalments at the beginning of each semester.{" "}
+                    <i>
+                      Note: The exchange rate for Students paying into the Naira
+                      Account is N400 per Dollar.
+                    </i>
+                  </p>
+                  <h4>Account Details:</h4>
+                  <p>
+                    <strong>
+                      Remnant Christian Network Bible Seminary - Adullam
+                      1024318850 (Naira) UBA.
+                    </strong>
+                  </p>
+                  <p>
+                    <Link to="/sponsorship" className="link">
+                      Domiciliary account details
+                    </Link>
+                  </p>
+                </div>
 
                 {/* <!-- apply --> */}
                 <Link to="/register" className="apply-btn">
@@ -166,12 +176,32 @@ export default function About() {
                   Ministry.
                 </p>
                 {/* ADD PROGRAM FEES 28 OCTOBER ONLINE STUDENTS  */}
-                <p>
+                <div>
                   <h3>Online program Fees:</h3>{" "}
-                  <strong>$1,200 (per semester) </strong> - This covers
-                  Registration, tuition, Administrative charges and Internet
-                  Management Fee.
-                </p>
+                  <p>
+                    <strong>$1,200 (per semester) </strong> - This covers
+                    Registration, tuition, Administrative charges and Internet
+                    Management Fee. <br /> Payment can be made once for the
+                    entire program, or in two instalments at the beginning of
+                    each semester.{" "}
+                    <i>
+                      Note: The exchange rate for Students paying into the Naira
+                      Account is N400 per Dollar.
+                    </i>
+                  </p>
+                  <h4>Account Details:</h4>
+                  <p>
+                    <strong>
+                      Remnant Christian Network Bible Seminary - Adullam
+                      1024318850 (Naira) UBA.
+                    </strong>
+                  </p>
+                  <p>
+                    <Link to="/sponsorship" className="link">
+                      Domiciliary account details
+                    </Link>
+                  </p>
+                </div>
 
                 {/* <!-- apply --> */}
                 <Link to="/register" className="apply-btn">
@@ -235,10 +265,7 @@ export default function About() {
           <h1>Accomodation</h1>
         </header>
         <div className="container semesters__details">
-          <p>
-            Scholarship grants are made available through the generous donations
-            of kind partners.
-          </p>
+          <p></p>
 
           <div className="semesters-card">
             <div className="semester-card">
@@ -250,7 +277,7 @@ export default function About() {
                   average range of N80,000 - N150,000 for single room. It is
                   entirely up to the students to make the arrangements for
                   themselves. However, Adullam Help Desk{" "}
-                  <a href="tel:+23490145265705">+2349014526570</a>will be glad
+                  <a href="tel:+23490145265705">+2349014526570</a> will be glad
                   to support where necessary.
                 </p>
               </div>
@@ -260,9 +287,10 @@ export default function About() {
               <div className="semester-text">
                 <h3>On-Campus</h3>
                 <p>
-                  There is a shared room space of 4 persons per room within the
-                  school environment for N40,000 per session (covering for the
-                  two semesters).
+                  There is a shared room space within the school environment for
+                  N40,000 per session (covering for the two semesters). Adullam
+                  Help Desk <a href="tel:+23490145265705">+2349014526570</a>{" "}
+                  will be glad to support where necessary.
                 </p>
               </div>
             </div>
@@ -294,7 +322,7 @@ export default function About() {
             <div className="faculty-card">
               <img src={revTony} alt="Adullam Dean Students Affairs" />
               <h4>Rev. Anthony George</h4>
-              <p>Dean Students</p>
+              <p>Dean</p>
             </div>
             {/* <!-- end of card --> */}
             <div className="faculty-card">
