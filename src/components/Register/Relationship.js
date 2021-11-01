@@ -145,8 +145,8 @@ const Relationship = ({ formData, setForm, navigation }) => {
               className="form__control--input"
               name="adullaminfo"
               value={adullaminfo}
-              // onChange={setForm}
-              onChange={(e) => setForm(e.target.value)}
+              onChange={setForm}
+              // onChange={(e) => setForm(e.target.value)}
               required
             />
           </div>
