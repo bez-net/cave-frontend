@@ -19,15 +19,11 @@ const Relationship = ({ formData, setForm, navigation }) => {
   let [formOkay, setFormOkay] = useState(false);
 
   const validate = (e) => {
-    if(rel_status && adullaminfo && havecloserel) {
-
+    if (rel_status && adullaminfo && havecloserel) {
       e.preventDefault();
       setFormOkay(true);
-  
     }
-    
-  }
-  
+  };
 
   return (
     <div className="register">
@@ -36,13 +32,17 @@ const Relationship = ({ formData, setForm, navigation }) => {
         <img src={logo} className="reg__logo" alt="adullam logo" />
         <h2 className="register__heading">Registration Form</h2>
         <p>Diploma in Theology and Ministry Application.</p>
-        <p>All fields with <strong className="required">*</strong> are required!</p>
+        <p>
+          All fields with <strong className="required">*</strong> are required!
+        </p>
       </div>
       <form className="register__form">
         <div className="register__content">
           <div className="note reg__label">Relationships</div>
           <div className="form__control">
-            <label>Relationship Status <span className="required">*</span></label>
+            <label>
+              Relationship Status <span className="required">*</span>
+            </label>
 
             <select
               className="form__control--input"
@@ -137,18 +137,24 @@ const Relationship = ({ formData, setForm, navigation }) => {
             />
           </div>
           <div className="form__control">
-            <label>How did you hear of Adullam <span className="required">*</span></label>
+            <label>
+              How did you hear of Adullam <span className="required">*</span>
+            </label>
             <input
               type="text"
               className="form__control--input"
               name="adullaminfo"
               value={adullaminfo}
-              onChange={setForm}
+              // onChange={setForm}
+              onChange={(e) => setForm(e.target.value)}
               required
             />
           </div>
           <div className="form__control">
-            <label>Have you had a close relative attend Adullam? <span className="required">*</span></label>
+            <label>
+              Have you had a close relative attend Adullam?{" "}
+              <span className="required">*</span>
+            </label>
             <select
               className="form__control--input"
               name="havecloserel"
@@ -162,24 +168,28 @@ const Relationship = ({ formData, setForm, navigation }) => {
           </div>
 
           <div className="next__prev--box">
-          <button
+            <button
               onClick={() => navigation.previous()}
               className="formNavigator forward"
             >
               &larr; Back
             </button>
 
-          { formOkay ? 
-            
-            <button onClick={ () => navigation.next() } className="formNavigator forward">Next &rarr;</button> : 
-            
-            <button className="formNavigator forward" onClick={ validate } >Next &nbsp;</button> 
-          }
-          
+            {formOkay ? (
+              <button
+                onClick={() => navigation.next()}
+                className="formNavigator forward"
+              >
+                Next &rarr;
+              </button>
+            ) : (
+              <button className="formNavigator forward" onClick={validate}>
+                Next &nbsp;
+              </button>
+            )}
           </div>
         </div>
       </form>
-      
     </div>
   );
 };
