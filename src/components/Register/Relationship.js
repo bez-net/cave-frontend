@@ -146,6 +146,7 @@ const Relationship = ({ formData, setForm, navigation }) => {
               name="adullaminfo"
               value={adullaminfo}
               onChange={setForm}
+              //made changes below
               // onChange={(e) => setForm(e.target.value)}
               required
             />
