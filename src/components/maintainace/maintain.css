@@ -1,0 +1,67 @@
+body {
+  background-image: linear-gradient(45deg, #567ea2, #231b30);
+  color: #fff;
+  font: 1.2em "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+p {
+  color: #e8e0dc;
+  font-size: 1.2em;
+  margin-right: 20%;
+}
+
+.contain {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.contain div {
+  display: flex;
+  width: 40%;
+  height: 100vh;
+}
+
+.contain div:first-child {
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+div.picture_bg {
+  background-image: url("maintain.png");
+  background-position: center center;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+}
+
+div.picture_bg p {
+  align-self: flex-end;
+  opacity: 0.4;
+  margin: 0;
+  padding: 0 4% 2% 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .contain {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .contain div {
+    display: flex;
+    width: 80%;
+    height: 50vh;
+  }
+}
