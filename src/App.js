@@ -45,7 +45,7 @@ function App() {
 
             <Route path="/register">
               <Maintain />
-              <Registration />
+              {/* <Registration /> */}
             </Route>
 
             <Route path="/comingSoon">
