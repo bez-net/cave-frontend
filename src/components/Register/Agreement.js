@@ -4,34 +4,57 @@ import ScrollToTop from "../ScrollToTop";
 import { useHistory } from "react-router-dom";
 
 const Agreement = ({ formData, setForm, navigation }) => {
-
   const { agree } = formData;
+  const email = {
+    from: "info@adullam.ng",
+    to: "adeinfo2015@gmail.com",
+    subject: "Congratulation",
+    body: "Congratulations! on your successful registration we will get back to you shortly",
+    attachements: [],
+  };
 
-  
   // const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
 
   const handleSubmit = (e) => {
-
     e.preventDefault();
     console.log(formData);
     // setIsLoading(true);
 
-    fetch('https://adullam.ng/api/person', {
-      method: 'POST',
+    fetch("https://adullam.ng/api/person", {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
-    }).then( (res) => {
+      body: JSON.stringify(formData),
+    })
+      .then((res) => {
+        // show status
+        console.log(res.status);
 
-      // redirect to success page 
-      if(res.ok) {
-        history.push('/success');
-      }
+        // redirect to success page
+        if (res.ok) {
+          history.push("/success");
 
-    }).catch(err => {
+          // send mail after successful registration
+          fetch("https://adullam.ng/api/mail", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(email),
+          })
+            .then((res) => {
+              console.log("before checking mail response " + res.json);
+              if (res.ok) {
+                alert("Congratulation, Check your email for reference form");
+                console.log("mail sent: " + res.json);
+              }
+            })
+            .catch((err) => console.log(err));
+        }
+        //END OF SENDING MAIL
+      })
+      .catch((err) => {
         console.log(err.message);
-    });
-  }
+      });
+  };
 
   return (
     <div className="register">
@@ -40,7 +63,9 @@ const Agreement = ({ formData, setForm, navigation }) => {
         <img src={logo} className="reg__logo" alt="adullam logo" />
         <h2 className="register__heading">Registration Form</h2>
         <p>Diploma in Theology and Ministry Application.</p>
-        <p>All fields with <strong className="required">*</strong> are required!</p>
+        <p>
+          All fields with <strong className="required">*</strong> are required!
+        </p>
       </div>
       <form className="register__form">
         <div className="register__content">
@@ -63,15 +88,26 @@ const Agreement = ({ formData, setForm, navigation }) => {
           </span>
 
           <div className="form__control">
-            <label>Do you agree with the above stated agreement? <span className="required">*</span></label>
-            <select className="form__control--input" name="agree" value={ agree } onChange={ setForm } required>
+            <label>
+              Do you agree with the above stated agreement?{" "}
+              <span className="required">*</span>
+            </label>
+            <select
+              className="form__control--input"
+              name="agree"
+              value={agree}
+              onChange={setForm}
+              required
+            >
               <option value="">Select</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
           </div>
           <div className="form__control">
-            <label>Name of Applicant <span className="required">*</span></label>
+            <label>
+              Name of Applicant <span className="required">*</span>
+            </label>
             <input
               type="text"
               className="form__control--input"
@@ -87,12 +123,12 @@ const Agreement = ({ formData, setForm, navigation }) => {
             >
               &larr; Back
             </button>
-              
-              <button onClick={ handleSubmit } className="formNavigator forward">Register <i className="fa fa-check"></i></button> : 
-
+            <button onClick={handleSubmit} className="formNavigator forward">
+              Register <i className="fa fa-check"></i>
+            </button>{" "}
+            :
           </div>
         </div>
-        
       </form>
     </div>
   );
