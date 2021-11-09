@@ -19,9 +19,6 @@ import { Success } from "./components/Register/Success";
 import { ComingSoon } from "./components/Register/ComingSoon";
 import { RefereeForm } from "./components/Register/RefereeForm";
 
-// IMPORT MAINTANANCE PAGE
-import { Maintain } from "./components/maintainace/Maintain";
-
 function App() {
   return (
     <Router>
@@ -44,8 +41,7 @@ function App() {
             </Route>
 
             <Route path="/register">
-              <Maintain />
-              {/* <Registration /> */}
+              <Registration />
             </Route>
 
             <Route path="/comingSoon">

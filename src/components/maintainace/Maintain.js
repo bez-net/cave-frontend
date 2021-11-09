@@ -13,11 +13,11 @@ export const Maintain = () => {
         </p>
       </div>
       <div className="picture_bg">
-        {/* <p>
+        <p>
           <small>
             Image <i class="far fa-copyright"></i> corklifebyhilary
           </small>
-        </p> */}
+        </p>
       </div>
     </div>
   );
