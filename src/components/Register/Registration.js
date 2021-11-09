@@ -8,8 +8,9 @@ import ChristianExperience from "./ChristianExperience";
 import Health from "./Health";
 import WorkContactReference from "./WorkContactReference";
 import Relationship from "./Relationship";
-import PersonalDetails from "./PersonalDetails";
+// import PersonalDetails from "./PersonalDetails";
 import Financials from "./Financials";
+import GoogleForm from "./GoogleForm";
 
 const defaultData = {
   first_name: "",
@@ -110,7 +111,8 @@ export const Registration = () => {
 
   switch (step.id) {
     case "personalDetails":
-      return <PersonalDetails {...props} />;
+      return <GoogleForm />;
+    // return <PersonalDetails {...props} />;
     case "financials":
       return <Financials {...props} />;
     case "relationships":
