@@ -18,6 +18,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import { Success } from "./components/Register/Success";
 import { ComingSoon } from "./components/Register/ComingSoon";
 import { RefereeForm } from "./components/Register/RefereeForm";
+import { RegistrationGhana } from "./components/Register/RegistrationGhana";
+
 
 function App() {
   return (
@@ -42,6 +44,10 @@ function App() {
 
             <Route path="/register">
               <Registration />
+            </Route>
+
+            <Route path="/registerGhana">
+              <RegistrationGhana />
             </Route>
 
             <Route path="/comingSoon">
