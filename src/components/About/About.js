@@ -52,7 +52,7 @@ export default function About() {
               <p>There are two enrollments annually:</p>
               <ul>
                 <li>January Enrollment</li>
-                <li>July Enrollment</li>
+                <li>June Enrollment</li>
               </ul>
             </div>
           </div>
@@ -137,13 +137,42 @@ export default function About() {
                       Account is N400 per Dollar.
                     </i>
                   </p>
-                  <h4>Account Details:</h4>
+                  <h3>Account Details:</h3>
                   <p>
                     <strong>
                       Remnant Christian Network Bible Seminary - Adullam
                       1024318850 (Naira) UBA.
                     </strong>
                   </p>
+
+                  <h3>Dollar Account</h3>
+                  <p>
+                    Correspondent Bank: <strong>Citibank New York</strong>
+                  </p>
+
+                  <p>
+                    Swift Code: <strong>CITIUS33</strong>
+                  </p>
+                  <p>
+                    Routing or ABA No: <strong>021000089</strong>
+                  </p>
+                  <p>
+                    For Credit To:<strong> United Bank for Africa Plc</strong>
+                  </p>
+                  <p>
+                    Account No: <strong> 36320321</strong>
+                  </p>
+                  <p>
+                    SWIFT CODE: <strong> UNAFNGLA</strong>
+                  </p>
+                  <p>
+                    For Final Credit to:{" "}
+                    <strong> Remnant Christian Network Bible Seminary Adullam.</strong>
+                  </p>
+                  <p>
+                    Beneficiary Account No: <strong> 3003413033</strong>
+                  </p>
+
                   <p>
                     <Link to="/sponsorship" className="link">
                       Domiciliary account details
@@ -189,13 +218,43 @@ export default function About() {
                       Account is N400 per Dollar.
                     </i>
                   </p>
-                  <h4>Account Details:</h4>
+                  <h3>Account Details:</h3>
                   <p>
                     <strong>
                       Remnant Christian Network Bible Seminary - Adullam
                       1024318850 (Naira) UBA.
                     </strong>
                   </p>
+
+                  <h3>Dollar Account</h3>
+                  <p>
+                    Correspondent Bank: <strong>Citibank New York</strong>
+                  </p>
+
+                  <p>
+                    Swift Code: <strong>CITIUS33</strong>
+                  </p>
+                  <p>
+                    Routing or ABA No: <strong>021000089</strong>
+                  </p>
+                  <p>
+                    For Credit To:<strong> United Bank for Africa Plc</strong>
+                  </p>
+                  <p>
+                    Account No: <strong> 36320321</strong>
+                  </p>
+                  <p>
+                    SWIFT CODE: <strong> UNAFNGLA</strong>
+                  </p>
+                  <p>
+                    For Final Credit to:{" "}
+                    <strong> Remnant Christian Network Bible Seminary Adullam.</strong>
+                  </p>
+                  <p>
+                    Beneficiary Account No: <strong> 3003413033</strong>
+                  </p>
+
+
                   <p>
                     <Link to="/sponsorship" className="link">
                       Domiciliary account details
@@ -277,7 +336,7 @@ export default function About() {
                   average range of N80,000 - N150,000 for single room. It is
                   entirely up to the students to make the arrangements for
                   themselves. However, Adullam Help Desk{" "}
-                  <a href="tel:+23490145265705">+2349014526570</a> will be glad
+                  <a href="tel:+2348022164432">+234 802 216 4432</a> will be glad
                   to support where necessary.
                 </p>
               </div>
@@ -289,7 +348,7 @@ export default function About() {
                 <p>
                   There is a shared room space within the school environment for
                   N40,000 per session (covering for the two semesters). Adullam
-                  Help Desk <a href="tel:+23490145265705">+2349014526570</a>{" "}
+                  Help Desk <a href="tel:+2348022164432">+234 802 216 4432</a>{" "}
                   will be glad to support where necessary.
                 </p>
               </div>
