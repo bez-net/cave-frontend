@@ -290,14 +290,14 @@ h3 {
 }
 .txt p {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 .apply-btn {
   text-decoration: none;
   background: #ed3648;
   color: #fff;
-  margin: 0.7rem;
+  margin: 0.5rem;
   font-weight: bold;
   border-radius: 0.5rem;
   padding: 0.8rem;

@@ -121,9 +121,13 @@ const Footer = () => {
           {/* <!-- Contact us --> */}
           <div className="contact-us">
             <div className="contact-item">
-              <p>
+              {/* <p>
                 <i className="fa fa-phone"></i>{" "}
                 <a href="tel:+2349014526570">+234 901 452 6570</a>
+              </p> */}
+              <p>
+                <i className="fa fa-phone"></i>{" "}
+                <a href="tel:+2348022164432">+234 802 216 4432</a>
               </p>
               <p>
                 <i className="fa fa-envelope"></i>{" "}
