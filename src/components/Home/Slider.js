@@ -11,8 +11,8 @@ const Slider = () => {
         <div className="slider">            
         <div className="myslider fade">
             <div className="txt">
-                <h1>ADULLAM - RCN Bible Seminary</h1>
-                <p>January 2022 Session</p>
+                <h1>ADULLAM - RCN Theological Seminary</h1>
+                <p>Postgraduate Diploma in Theology (Ghana Campus - September 2022)</p> 
                 <Link to="/register" className="apply-btn">Apply Now</Link>
 
                 {/* <Link to="/registerGhana" className="apply-btn">Ghana Campus</Link> */}

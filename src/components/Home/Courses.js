@@ -5,7 +5,11 @@ const Courses = () => {
                 <h1>What You will Learn.</h1>
             </header>
             <div className="container courses">
-                <p>The program duration has 2 semesters of four (4) months each. Each of the semesters are schedule during the February or July sessions depending on the time of enrolment.</p>
+                <p>The program is divided into two semesters. The First Semester is focused 
+on the understanding of fundamental Biblical Truth and the development of
+spiritual stamina for Christian living in a fallen world. The second semester
+is focused the development of contemporary strategies for effective ministry
+within various context.</p>
 
                 <h3>Course List</h3>
                 <div className="course-cards">

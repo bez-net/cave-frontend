@@ -20,9 +20,9 @@ const Testimonies = () => {
                         <img src={testifier2} alt="testifier" />
                     </div>
                     <div className="testimony-text">
-                        <p>My experience in Adullam is incomplete without the mention of my super intellectual, Holy Ghost-filled Lecturers. I'm forever grateful. To the one in whom wisdom has found a home, in person of the provost Rev Daniel O. In you millions of lives are being groomed and transformed, I say thank you.</p>
+                        <p>I had had previous experiences that made me believe God hated me and was trying to kill me. I was always afraid trying so hard to please him and know. At Adullam, I learned so much about God that I knew I was being lied to. I learned that God is love and he truly desires us to know him and fellowship with him. Adullam was truly life-changing</p>
 
-                        <p><strong><em>Kadeema Blessing,</em></strong> Makurdi, Nigeria</p>
+                        <p><strong><em>Nicole,</em></strong> Texas</p>
                     </div>
                 </div> 
                 {/* <!-- end of card --> */}
@@ -43,9 +43,9 @@ const Testimonies = () => {
                         <img src={ testifier3 }  alt="testifier" />
                     </div>
                     <div className="testimony-text">
-                        <p>I hated Theological Schools before now but Adullam changed my orientation entirely, the daily Bible Reading and praying in Tongue Exercise have become my culture and lifestyle. I began praying for 5 hours streched in Adullam. Adullam also groomed me in Evangelism. Glory to God.</p>
+                        <p>Fulfilling my calling would have been a nightmare without the kind of training I received at Adullam. I have been ministering part-time for 2 years when I realized I was not prepared for ministry. I have learnt Theology and been trained for ministry. The principles of prayer, interpretation and application of scriptures, territorial invasion, and establishment of the reign of God's Kingdom in any culture.</p>
                         
-                        <p><strong><em>Ukpa Nwanneka Chukwuma,</em></strong> Owerri, Nigeria</p>
+                        <p><strong><em>Lesley Uzohuo,</em></strong> California, USA</p>
                     </div>
                 </div> 
                 {/* <!-- end of card --> */}

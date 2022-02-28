@@ -9,14 +9,14 @@ const About = () => {
       </header>
       <div className="about-content">
         <div className="about-text">
-          <h2>RCN Bible Seminary - ADULLAM</h2>
+          <h2>RCN Theological Seminary - Adullam</h2>
           <p>
-            The RCN Bible Seminary – Adullam, is a ministry training program
-            designed with a learning environment that has an intense atmosphere
-            of Heaven, accompanied with Spiritual impartations. It is a training
-            and equipping that is imparting, intellectual, and rigorous. A
-            program characteristic of an intense academic rigor alongside a high
-            spiritual engagement.
+            The school is called RCN Theological Seminary - Adullam, is a
+            ministry training program designed with a learning environment that
+            has an intense atmosphere of Heaven, accompanied with Spiritual
+            impartations. It is a training and equipping that is imparting,
+            intellectual, and rigorous. A program characteristic of an intense
+            academic rigour alongside a high spiritual engagement.
           </p>
 
           {/* <p>Adullam means Justice of the people. It was mentioned eight (8) times in scriptures. The Cave of Adullam stood on the old Roman road in the valley of Elah, not far from Gath, which was the scene of David's memorable victory over Goliath (1Samuel 17:2). The Cave of Adullam became a place of resort for David. It was the location where all that were stranded, discourage and had given up on life resorted to David to find meaning (1Sam. 22:1-2). Adullam became a forge where charlatans are turned into champions, the PLACE, both for the apprentice and the veteran, and a retreat center for refreshing and retooling (2Sam.23:13-17). It was called "the glory of Israel" (Micah 1:15).</p>  */}
@@ -31,7 +31,9 @@ const About = () => {
             situations.
           </p>
 
-          <p>The RCN Bible Seminary - Adullam, offers two program options:</p>
+          <p>
+            The RCN Theological Seminary - Adullam, offers two program options:
+          </p>
           <ul>
             <li>
               <p>On-Campus Option</p>

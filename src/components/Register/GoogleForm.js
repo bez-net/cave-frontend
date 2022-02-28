@@ -6,7 +6,7 @@ export default function GoogleForm() {
       <section className="container">
         <iframe
           title="registration form"
-          src="https://docs.google.com/forms/d/e/1FAIpQLScN_auV2PuObupSS6bR0T-wIM2TQlFjBOGqfpYaNIHxZsiYTQ/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeHaBDz5xXSA13TiPM0NM-Qt_nY61md6Kmi2_28DPjjeaZrdA/viewform?usp=sf_link/viewform?embedded=true"
           width="700"
           height="500"
           frameBorder="0"
